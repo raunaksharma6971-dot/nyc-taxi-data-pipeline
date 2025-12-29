@@ -40,7 +40,7 @@ CSV Exports / BI Consumption
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Category | Tools |
 |--------|------|
