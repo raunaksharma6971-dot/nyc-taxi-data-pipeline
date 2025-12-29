@@ -1,25 +1,15 @@
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.venv/
-venv/
+# Ignore raw data files
+data/raw/*.parquet
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Mac
-.DS_Store
-
-# Data (keep raw files out of git)
-warehouse/
-data/raw/
+# Ignore processed data
 data/processed/
 
-# Parquet/csv outputs
-*.parquet
-*.csv
+# Ignore local database
+warehouse/*.duckdb
 
-# Logs
-*.log
+# Python cache
+__pycache__/
+*.pyc
+
+# Mac junk
+.DS_Store
