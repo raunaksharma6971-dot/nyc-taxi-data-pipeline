@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Data (keep raw files out of git)
+warehouse/
+data/raw/
+data/processed/
+
+# Parquet/csv outputs
+*.parquet
+*.csv
+
+# Logs
+*.log

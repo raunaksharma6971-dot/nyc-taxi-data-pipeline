@@ -1,0 +1,29 @@
+name: NYC Taxi Pipeline CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: |
+          python pipelines/01_extract.py
+          python pipelines/02_transform_load.py
+          python pipelines/03_quality_checks.py
+          python pipelines/04_analytics_marts.py
+          python pipelines/05_export_marts.py
