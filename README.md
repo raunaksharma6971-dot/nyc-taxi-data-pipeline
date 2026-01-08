@@ -44,7 +44,7 @@ CSV Exports / BI Consumption
 
 | Category | Tools |
 |--------|------|
-| Programming Language | Python 3.12 |
+| Programming Language | Python |
 | Storage Format | Parquet |
 | Data Processing | Pandas |
 | Data Warehouse | DuckDB |
